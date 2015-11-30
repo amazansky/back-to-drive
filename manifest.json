@@ -1,0 +1,23 @@
+{
+   "author": "RobotXLabs",
+   "browser_action": {
+      "default_icon": "icon_64.png",
+      "default_popup": "popup.htm"
+   },
+   "content_scripts": [ {
+      "js": [ "btdd.js" ],
+      "matches": [ "https://docs.google.com/*/d/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "A nifty little extension that changes the link on the Docs, Spreadsheets, Slides, Drawings and Forms logo back to Drive.",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "32": "icon_32.png",
+      "64": "icon_64.png"
+   },
+   "manifest_version": 2,
+   "name": "Back to Drive",
+   "permissions": [ "https://docs.google.com/*/d/*" ],
+   "version": "0.1.0"
+}
